@@ -2,14 +2,12 @@ server:
   port: 8088
 logging:
     level:
-        root: WARN
+        root: INFO
         sample:
             mybatis:
                 mapper: TRACE
-#mybatis setting
 mybatis:
     config-location: classpath:mybatis-config.xml
-#jdbc setting
 spring:
     h2:
         console:
