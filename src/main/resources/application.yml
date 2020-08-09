@@ -1,0 +1,22 @@
+server:
+  port: 8088
+logging:
+    level:
+        root: WARN
+        sample:
+            mybatis:
+                mapper: TRACE
+#mybatis setting
+mybatis:
+    config-location: classpath:mybatis-config.xml
+#jdbc setting
+spring:
+    h2:
+        console:
+            enabled: true
+            path: /console
+    datasource:
+        driver-class-name: org.h2.Driver 
+        url: jdbc:h2:file:~/Github/h2/test_db;AUTO_SERVER=TRUE
+        username: sa
+        password: 
